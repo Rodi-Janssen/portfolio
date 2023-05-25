@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\r.janssen\\C#\\portfolio\\portfolio\\portfolio.csproj",
+      "projectUniqueName": "C:\\Users\\r.janssen\\Source\\Repos\\portfolio\\portfolio\\portfolio.csproj",
       "projectName": "portfolio",
-      "projectPath": "C:\\Users\\r.janssen\\C#\\portfolio\\portfolio\\portfolio.csproj",
+      "projectPath": "C:\\Users\\r.janssen\\Source\\Repos\\portfolio\\portfolio\\portfolio.csproj",
       "packagesPath": "C:\\Users\\r.janssen\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\r.janssen\\C#\\portfolio\\portfolio\\obj\\",
+      "outputPath": "C:\\Users\\r.janssen\\Source\\Repos\\portfolio\\portfolio\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\r.janssen\\AppData\\Roaming\\NuGet\\NuGet.Config",
