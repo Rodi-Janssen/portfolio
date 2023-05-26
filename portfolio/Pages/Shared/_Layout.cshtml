@@ -21,22 +21,17 @@
                         <a class="nav-link" asp-area="" asp-page="/Index">Home</a>
                     </li>
                     <li>
-                        <a class="nav-link" asp-area="" asp-page="/Privacy">Privacy</a>
+                        <a class="nav-link" asp-area="" asp-page="/about">About me</a>
                     </li>
                 </ul>
             </div>
-            <div id="page-content-wrapper">
-                <div class="container-fluid">
-                    <button id="menu-toggle" class="rounded-pill">
-                        <i class="bi bi-list"></i>
-                    </button>
-                    <div id="menu-toggle" style="z-index:-1" class="rounded-pill"/>
-                </div>
-            </div>
+            <button id="menu-toggle" class="rounded-pill">
+                <i class="bi bi-list"></i>
+            </button>
         </div>
     </header>
-    <div class="container">
-        <main role="main" class="pb-3">
+    <div class="container-fluid py-4">
+        <main role="main">
             @RenderBody()
         </main>
     </div>
