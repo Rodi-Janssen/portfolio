@@ -28,7 +28,6 @@ let interval = null;
 function namechanger() {
     let iteration = 0;
     var name = "Rodi Janssen";
-    console.log(name);
 
     clearInterval(interval);
 

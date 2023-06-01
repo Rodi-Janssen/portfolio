@@ -4,7 +4,7 @@
 	ViewData["Title"] = "About me";
 	TimeSpan age = DateTime.Now - new DateTime(2004, 6, 28);
 
-	ViewData["age"] = age.Days / 365;
+	ViewData["age"] = Convert.ToInt32(Math.Floor(age.Days / 365.25));
 }
 
 <div class="row d-flex flex-row about-text">
