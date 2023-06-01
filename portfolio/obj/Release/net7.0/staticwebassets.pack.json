@@ -5,6 +5,14 @@
       "PackagePath": "staticwebassets\\portfolio.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\r.janssen\\Source\\Repos\\portfolio\\portfolio\\wwwroot\\CV-Rodi-Janssen.jpg",
+      "PackagePath": "staticwebassets\\CV-Rodi-Janssen.jpg"
+    },
+    {
+      "Id": "C:\\Users\\r.janssen\\Source\\Repos\\portfolio\\portfolio\\wwwroot\\CV-Rodi-Janssen.pdf",
+      "PackagePath": "staticwebassets\\CV-Rodi-Janssen.pdf"
+    },
+    {
       "Id": "C:\\Users\\r.janssen\\Source\\Repos\\portfolio\\portfolio\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

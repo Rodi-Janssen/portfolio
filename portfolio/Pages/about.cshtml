@@ -1,35 +1,78 @@
 ﻿@page
 @model portfolio.Pages.aboutModel
 @{
-    ViewData["Title"] = "About me";
+	ViewData["Title"] = "About me";
+	TimeSpan age = DateTime.Now - new DateTime(2004, 6, 28);
+
+	ViewData["age"] = age.Days / 365;
 }
 
-<div class="row d-flex flex-row">
-    <div class="col-6 center-block about-text">
-        <div class="text-center">
-            <h1 class="white-text">over mij:</h1>
-            <p class="white-text h5">
-                Mijn naam is Rodi Janssen, <br />
-                Ik ben een 18-jarige softwareontwikkelaar uit het dorp <a href="https://www.google.nl/maps/place/Venhorst/" target=”_blank”>Venhorst</a>.<br />
-                Momenteel volg ik de MBO-opleiding Softwaredeveloper in Cuijk.<br />
-                via school heb ik stage gelopen by verhoeven-leenders waar ik na school ook heb gewerkt.<br />
-                Ook ben ik van plan om verder te gaan studeren by fontys hogeschool eindhoven.<br />
-            </p>
+<div class="row d-flex flex-row about-text">
+	<div class="about-intro">
+		<h1 class="text-center">Laat me mezelf voorstellen</h1>
+		<div class="intro-details">
+			<div class="intro-paragraph padding">
+				<p class="text-center">
+					Mijn naam is Rodi Janssen, 
+					Ik ben een @ViewData["age"]-jarige softwareontwikkelaar uit het dorp <a href="https://www.google.nl/maps/place/Venhorst/" target=”_blank”>Venhorst</a>.
+					Momenteel volg ik de MBO-opleiding software development in Cuijk.
+					In mijn vrije tijd vind ik het leuk om games te spelen en met vrienden af te spreken.
+					Ook ben ik van plan om verder te gaan studeren by fontys hogeschool eindhoven.
+			</p></div>
+		</div>
+	</div>
+	<div class="about-info">
+		<div class="profile padding">
 
-            <br />
-            <h1 class="white-text">Programmeren:</h1>
-            <p class="white-text h5">
-                Door mijn opleiding en werkervaring heb ik ervaring opgedaan met verschillende <br />
-                programmeertalen, zoals HTML, python, C#, CSS, JavaScript, PHP, en MySQL/ SQL. <br />
-                Ik houd van van nieuwe uitdagingen, omdat ik dan weer iets nieuws heb geleerd.
-            </p>
+			<h3 class="text-center">Mail:</h3>
+			<p class="text-center"><a href="mailto:rodijanssen@live.nl" subject="">rodijanssen@live.nl</a></p>
 
-            <br />
-            <h1 class="white-text">CV:</h1>
-            <p class="h5">Download: <a href="~/CV-Rodi-Janssen.pdf" download>CV</a></p>
-        </div>
-    </div>
-    <div class="col-4 justify-content-center about-img">
-        <img src="~/CV-Rodi-Janssen.jpg" class="CV-img"/>
-    </div>
+			<h3 class="text-center">Linkedin:</h3>
+			<p class="text-center"><a href="https://www.linkedin.com/in/rodi-janssen/" target=”_blank”>linkedin</a></p>
+
+			<div class="container mt-5">
+				<div class="col-md-12 text-center">
+					<a class="btn about-button download-cv" href="~/CV-Rodi-Janssen.pdf" download>Download CV</a>
+				</div>
+			</div>
+		</div>
+		<div class="skills padding">
+			<h2 class="text-center">Skills</h2>
+			<p class="text-center">
+				Door mijn opleiding en werkervaring heb ik ervaring opgedaan met verschillende
+                programmeertalen, zoals HTML, CSS, PHP, JavaScript, python, C# en SQL.
+				Ik houd van van nieuwe uitdagingen, omdat ik dan weer iets nieuws heb geleerd.
+			</p>
+			<ul class="skill-bars">
+				<li>
+					<div class="progress percent90"><span>90%</span></div>
+					<strong>HTML</strong>
+				</li>
+				<li>
+					<div class="progress percent75"><span>75%</span></div>
+					<strong>CSS3</strong>
+				</li>
+				<li>
+					<div class="progress percent80"><span>80%</span></div>
+					<strong>PHP</strong>
+				</li>
+				<li>
+					<div class="progress percent65"><span>60%</span></div>
+					<strong>JavaScript</strong>
+				</li>
+				<li>
+					<div class="progress percent60"><span>70%</span></div>
+					<strong>Python</strong>
+                </li>
+                <li>
+                    <div class="progress percent35"><span>35%</span></div>
+                    <strong>C#</strong>
+                </li>
+				<li>
+					<div class="progress percent80"><span>80%</span></div>
+					<strong>SQL</strong>
+				</li>
+			</ul>
+		</div>
+	</div>
 </div>
