@@ -13,42 +13,8 @@
     <div class="infoContainer">
         <div class="devInfo">
             <div class="hello slideLeft">Hallo ik ben</div>
-            <div class="name slideLeft"><p data-value="Rodi Janssen">Rodi Janssen</p></div>
+            <div class="name slideLeft"><p id="namechange" data-value="Rodi Janssen">Rodi Janssen</p></div>
             <div class="about slideLeft">Junior Programeur</div>
         </div>
     </div>
 </div>
-
-<script>
-    const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-
-    let interval = null;
-
-    document.querySelector("p").onmouseover = event => {
-        let iteration = 0;
-
-        clearInterval(interval);
-
-        interval = setInterval(() => {
-            event.target.innerText = event.target.innerText
-                .split("")
-                .map((letter, index) => {
-                    if (letter == " "){
-                        return " ";
-                    }
-                    if (index < iteration) {
-                        return event.target.dataset.value[index];
-                    }
-
-                    return letters[Math.floor(Math.random() * 26)]
-                })
-                .join("");
-
-            if (iteration >= event.target.dataset.value.length) {
-                clearInterval(interval);
-            }
-
-            iteration += 1 / 10;
-        }, 30);
-    }
-</script>
