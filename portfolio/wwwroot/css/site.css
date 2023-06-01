@@ -280,6 +280,12 @@ body {
     background: #091f5c;
     position: relative;
     height: 100%;
+    overflow: visible;
+}
+.progress > span {
+    margin-left: auto;
+    margin-top: 10px;
+    color: #999999;
 }
 
 .skill-bars li .percent5 {
