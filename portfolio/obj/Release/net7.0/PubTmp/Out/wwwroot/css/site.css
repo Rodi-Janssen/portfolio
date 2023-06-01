@@ -58,9 +58,13 @@ body {
     overflow: hidden;
 }
 
-.CV-img{
-    width: 100%;
-    height: auto;
+.download-cv {
+    background: repeating-linear-gradient(45deg, #647656, #c8c8c8);
+    color: rgb(40, 87, 15);
+    font-weight: 800;
+    border: solid;
+    border-color: #eeeeee;
+    border-radius: 1rem;
 }
 
 .about-text {
@@ -126,7 +130,7 @@ body {
 .infoContainer {
     height: 60vh;
     width: 55vw;
-    margin: 20% 50%;
+    margin: 40% 50%;
     display: flex;
     justify-content: space-around;
     color: black;
@@ -139,11 +143,11 @@ body {
 }
 
 .hello {
-    font-size: 65px;
+    font-size: 85px;
 }
 
 .name {
-    font-size: 60px;
+    font-size: 80px;
     font-weight: bold;
     font-family: 'Fira Sans', sans-serif;
     opacity: 0;
@@ -152,7 +156,7 @@ body {
 }
 
 .about {
-    font-size: 35px;
+    font-size: 65px;
     opacity: 0;
     padding-left: 6rem;
 }
@@ -179,8 +183,6 @@ body {
     }
 }
 
-
-
 /* home page delay */
 .name.slideLeft {
     animation-delay: 0.5s;
@@ -198,7 +200,172 @@ body {
     animation-delay: 2s;
 }
 
+.padding {
+    padding: 4%;
+    padding-bottom: 1px;
+    padding-top: 30px;
+}
 
+.intro-details > .intro-paragraph {
+    width: 76%;
+    margin: auto;
+}
+
+.about-info {
+    display: -ms-flex;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+}
+
+.about-info > .profile {
+    -webkit-flex: 1 0 0;
+    flex: 1 0 0;
+    margin-top: 30px;
+}
+
+.about-info > .skills {
+    -webkit-flex: 1 0 0;
+    flex: 1 0 0;
+}
+
+.about-button {
+    min-width: 40%;
+    height: 100%;
+    padding: 20px;
+    font-family: "poppins-bold", sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all .3s ease-in;
+    -webkit-transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+}
+
+.skill-bars {
+    list-style: none;
+    margin: 3rem 0 0rem;
+    padding: 0px;
+}
+
+.skill-bars li {
+    height: .8rem;
+    width: 100%;
+    margin-bottom: 3rem;
+    padding: 0;
+    position: relative;
+    border: solid;
+    border-width: 2px;
+    border-color: #242c3926;
+    border-radius: 1rem;
+}
+
+.skill-bars li strong {
+    position: absolute;
+    left: 0;
+    top: -1rem;
+    font-family: "poppins-bold", sans-serif;
+    color: #252439;
+    text-transform: uppercase;
+    letter-spacing: .115rem;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 0;
+}
+
+.skill-bars li .progress {
+    background: #091f5c;
+    position: relative;
+    height: 100%;
+}
+
+.skill-bars li .percent5 {
+    width: 5%;
+}
+
+.skill-bars li .percent10 {
+    width: 10%;
+}
+
+.skill-bars li .percent15 {
+    width: 15%;
+}
+
+.skill-bars li .percent20 {
+    width: 20%;
+}
+
+.skill-bars li .percent25 {
+    width: 25%;
+}
+
+.skill-bars li .percent30 {
+    width: 30%;
+}
+
+.skill-bars li .percent35 {
+    width: 35%;
+}
+
+.skill-bars li .percent40 {
+    width: 40%;
+}
+
+.skill-bars li .percent45 {
+    width: 45%;
+}
+
+.skill-bars li .percent50 {
+    width: 50%;
+}
+
+.skill-bars li .percent55 {
+    width: 55%;
+}
+
+.skill-bars li .percent60 {
+    width: 60%;
+}
+
+.skill-bars li .percent65 {
+    width: 65%;
+}
+
+.skill-bars li .percent70 {
+    width: 70%;
+}
+
+.skill-bars li .percent75 {
+    width: 75%;
+}
+
+.skill-bars li .percent80 {
+    width: 80%;
+}
+
+.skill-bars li .percent85 {
+    width: 85%;
+}
+
+.skill-bars li .percent90 {
+    width: 90%;
+}
+
+.skill-bars li .percent95 {
+    width: 95%;
+}
+
+.skill-bars li .percent100 {
+    width: 100%;
+}
+
+.intro-paragraph p {
+    line-height: 1.6 !important;
+    font-size: 20px;
+}
 @media (max-width: 1200px) {
     .about-img {
         margin-left: 200px;
@@ -210,6 +377,21 @@ body {
 
     .col-4 {
         width: 80%
+    }
+}
+
+@media all and (max-width : 800px) {
+    .about-info {
+        flex-direction: column;
+    }
+
+    .about-info h2 {
+        text-align: center;
+    }
+
+    .intro-paragraph p {
+        line-height: 1.4 !important;
+        font-size: 18px;
     }
 }
 
@@ -236,14 +418,28 @@ body {
         width: 100%;
         margin-left: 0px;
     }
+
     #menu-toggle {
         display: inline;
     }
+
     .main {
         margin-left: 0px;
     }
 
     .slideLeft {
         position: relative;
+    }
+
+    .hello {
+        font-size: 65px;
+    }
+
+    .name {
+        font-size: 60px;
+    }
+
+    .about {
+        font-size: 35px;
     }
 }
